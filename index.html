@@ -3,177 +3,351 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reformas en Castelldefels, Gavá y Viladecans | LUJO 28 2025 SL</title>
-<meta name="description" content="Empresa especializada en reformas en Castelldefels, Gavá y Viladecans. Reformas integrales, baños premium y cocinas de lujo. Presupuesto en 24h.">
-<meta name="keywords" content="reformas Castelldefels, reformas Gavá, reformas Viladecans, empresa reformas Castelldefels">
+<title>Reformas de Lujo en Castelldefels, Gavà y Viladecans | LUJO 28</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="description" content="Empresa de reformas de alta gama en Castelldefels, Gavà y Viladecans. Baños, cocinas y pintura premium. Visita técnica gratuita. Calidad garantizada.">
 
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "LUJO 28 2025 SL",
- "telephone": "+34634219438",
- "areaServed": ["Castelldefels","Gavá","Viladecans"],
- "address": {
-   "@type": "PostalAddress",
-   "addressLocality": "Castelldefels",
-   "addressCountry": "ES"
- }
-}
-</script>
+<meta name="keywords" content="reformas Castelldefels, reformas Gavà, reformas Viladecans, reformas lujo Barcelona, baños premium, cocinas de diseño">
+
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Reformas de Lujo en Castelldefels, Gavà y Viladecans">
+<meta property="og:description" content="Transformamos baños, cocinas y viviendas con acabados premium. Visita gratis.">
+<meta property="og:type" content="website">
 
 <style>
-:root { --gold:#d4af37; --dark:#000; --gray:#f5f5f5; --white:#fff; }
-
-body { margin:0; font-family:'Arial', sans-serif; line-height:1.6; color:#333; }
-
-/* CABECERA */
-header {
-background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
-background-size:cover; background-position:center;
-padding:120px 20px; text-align:center; color:#fff;
+:root{
+--gold:#d4af37;
+--dark:#0a0a0a;
+--white:#ffffff;
+--gray:#f5f5f5;
 }
-header h1 { color:var(--gold); font-size:3em; margin:0; font-weight:900; letter-spacing:3px; }
-header p { font-size:1.2em; margin-top:10px; }
-.cta { display:inline-block; margin-top:25px; padding:16px 35px; background:var(--gold); color:#000; font-weight:bold; text-decoration:none; border-radius:8px; transition:0.3s; }
-.cta:hover { background:#fff; color:var(--gold); }
 
-/* SECCIONES */
-.section { max-width:1200px; margin:auto; padding:70px 20px; }
-h2 { text-align:center; margin-bottom:40px; position:relative; font-size:2.2em; }
-h2::after { content:""; width:60px; height:3px; background:var(--gold); position:absolute; bottom:-15px; left:50%; transform:translateX(-50%); }
+*{margin:0;padding:0;box-sizing:border-box;}
 
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
+body{
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;
+background:var(--white);
+color:#222;
+line-height:1.6;
+scroll-behavior:smooth;
+}
 
-.card { background:var(--white); border-radius:15px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,0.1); text-align:center; transition:0.3s; border:1px solid #eee; }
-.card:hover { transform:translateY(-8px); border-color:var(--gold); }
+/* NAV */
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(10px);
+padding:15px 40px;
+z-index:999;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-.review-img { width:60px; border-radius:50%; margin-bottom:10px; border:2px solid var(--gold); }
-.review-text { font-size:0.95em; color:#555; }
+nav a{
+color:var(--gold);
+text-decoration:none;
+font-weight:600;
+letter-spacing:1px;
+}
 
-.zona { background:var(--gray); padding:40px 20px; margin-bottom:20px; border-radius:10px; }
-footer { background:#000; color:#fff; text-align:center; padding:30px; }
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('BAÑO.JPG') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+text-align:center;
+color:white;
+padding:20px;
+}
 
-/* Botones flotantes */
-.floating-menu { position:fixed; bottom:20px; right:20px; display:flex; flex-direction:column; gap:12px; z-index:4000; }
-.f-btn { width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; text-decoration:none; font-size:26px; box-shadow:0 5px 15px rgba(0,0,0,0.3); border:2px solid #fff; transition:0.3s; }
-.f-btn.call { background:#007bff; }
-.f-btn.ws { background:#25d366; }
-.f-btn:hover { transform:scale(1.1); }
+.hero h1{
+font-size:3.5rem;
+letter-spacing:4px;
+margin-bottom:20px;
+animation:fadeUp 1.2s ease forwards;
+}
 
-/* Slider Antes/Después */
-.slider-container { position:relative; width:100%; border-radius:15px; overflow:hidden; cursor:ew-resize; }
-.slider-container img { width:100%; display:block; height:auto; }
-.slider-after { position:absolute; top:0; left:0; width:50%; height:100%; overflow:hidden; }
-.slider-after img { position:absolute; top:0; left:0; width:200%; height:100%; object-fit:cover; }
-.slider-label { position:absolute; top:10px; left:10px; background:var(--gold); color:#000; padding:5px 10px; font-size:0.8em; font-weight:bold; border-radius:5px; z-index:5; }
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+opacity:0;
+animation:fadeUp 1.5s ease forwards;
+animation-delay:0.4s;
+}
+
+.cta{
+margin-top:30px;
+padding:15px 35px;
+background:var(--gold);
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:0.4s;
+}
+
+.cta:hover{
+background:black;
+color:var(--gold);
+border:1px solid var(--gold);
+}
+
+/* SECTION */
+section{
+padding:100px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:60px;
+font-size:2.2rem;
+position:relative;
+}
+
+h2:after{
+content:'';
+width:60px;
+height:3px;
+background:var(--gold);
+position:absolute;
+bottom:-15px;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* CARDS */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+transition:0.5s;
+opacity:0;
+transform:translateY(40px);
+}
+
+.card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.slider{
+position:relative;
+height:260px;
+overflow:hidden;
+cursor:pointer;
+}
+
+.slider img{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+transition:opacity 1s ease;
+}
+
+.slider img.active{
+opacity:1;
+}
+
+.card-body{
+padding:30px;
+text-align:center;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:var(--gold);
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:black;
+color:var(--gold);
+}
+
+/* TESTIMONIOS */
+.testimonials{
+background:var(--gray);
+}
+
+.testimonial{
+max-width:700px;
+margin:30px auto;
+text-align:center;
+font-style:italic;
+}
+
+/* FOOTER */
+footer{
+background:black;
+color:var(--gold);
+text-align:center;
+padding:40px 20px;
+font-size:0.9rem;
+}
+
+/* ANIMACIONES */
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+/* FLOATING */
+.floating{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:15px;
+z-index:999;
+}
+
+.floating a{
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+color:white;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.call{background:#007bff;}
+.ws{background:#25d366;}
+
+@media(max-width:768px){
+.hero h1{font-size:2.3rem;}
+}
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Reformas en Castelldefels, Gavá y Viladecans</h1>
-<p>Especialistas en Reformas Integrales, Baños y Cocinas Premium</p>
-<a href="https://wa.me/34634219438?text=Hola%20quiero%20presupuesto%20para%20una%20reforma" class="cta">Presupuesto en 24h</a>
-</header>
+<nav>
+<a href="#">LUJO 28</a>
+<a href="tel:+34634219438">📞 634 21 94 38</a>
+</nav>
 
-<section class="section">
+<div class="hero">
+<h1>Reformas de Alta Gama</h1>
+<p>Especialistas en reformas premium en Castelldefels, Gavà y Viladecans. Diseño, precisión y acabados de lujo.</p>
+<a href="https://wa.me/34634219438" class="cta" target="_blank">Solicitar Visita Gratuita</a>
+</div>
+
+<section>
 <h2>Servicios Premium</h2>
 <div class="grid">
-<div class="card"><h3>Reformas Integrales</h3><p>Transformación completa de viviendas con planificación profesional.</p></div>
-<div class="card"><h3>Baños Premium</h3><p>Diseños modernos con Porcelanosa y Roca.</p></div>
-<div class="card"><h3>Cocinas de Lujo</h3><p>Encimeras Silestone y mobiliario exclusivo.</p></div>
-<div class="card"><h3>Alta Pintura</h3><p>Alisados perfectos y acabados profesionales.</p></div>
+
+<div class="card">
+<div class="slider">
+<img src="BAÑO-ANTES.JPG">
+<img src="BAÑO.JPG">
+</div>
+<div class="card-body">
+<h3>Reformas de Baños</h3>
+<p>Diseños exclusivos con acabados de alta gama.</p>
+<a href="https://wa.me/34634219438" class="btn">Consultar</a>
+</div>
+</div>
+
+<div class="card">
+<div class="slider">
+<img src="COCINA1.JPG">
+<img src="COCINA2.JPG">
+</div>
+<div class="card-body">
+<h3>Cocinas de Diseño</h3>
+<p>Encimeras y mobiliario premium personalizados.</p>
+<a href="https://wa.me/34634219438" class="btn">Consultar</a>
+</div>
+</div>
+
+<div class="card">
+<div class="slider">
+<img src="PINTURA.JPG">
+<img src="PINTURA1.JPEG">
+<img src="PINTURA2.JPEG">
+</div>
+<div class="card-body">
+<h3>Pintura de Alta Calidad</h3>
+<p>Acabados perfectos con materiales profesionales.</p>
+<a href="https://wa.me/34634219438" class="btn">Consultar</a>
+</div>
+</div>
+
 </div>
 </section>
 
-<section class="section">
-<h2>Proyectos Antes / Después</h2>
-<div class="grid">
-<!-- BAÑO -->
-<div class="slider-container">
-<img src="BAÑO-ANTES.jpg" alt="Baño antes">
-<div class="slider-after"><img src="Baño.jpg" alt="Baño después"></div>
-<span class="slider-label">Desliza con el mouse</span>
-</div>
-
-<!-- COCINA -->
-<div class="slider-container">
-<img src="COCINA1.JPG" alt="Cocina antes">
-<div class="slider-after"><img src="COCINA2.JPG" alt="Cocina después"></div>
-<span class="slider-label">Desliza con el mouse</span>
-</div>
-
-<!-- PINTURA 1 -->
-<div class="slider-container">
-<img src="PINTURA.JPG" alt="Pintura antes">
-<div class="slider-after"><img src="PINTURA1.JPEG" alt="Pintura después"></div>
-<span class="slider-label">Desliza con el mouse</span>
-</div>
-
-<!-- PINTURA 2 -->
-<div class="slider-container">
-<img src="PINTURA2.JPEG" alt="Pintura Viladecans">
-<div class="slider-after"><img src="PINTURA2.JPEG" alt="Pintura Viladecans"></div>
-<span class="slider-label">Desliza con el mouse</span>
-</div>
-</div>
-</section>
-
-<section class="section">
-<h2>Lo que dicen nuestros clientes</h2>
-<div class="grid">
-<div class="card">
-<img src="cliente1.jpg" alt="Cliente satisfecho en Castelldefels" class="review-img">
-<p><strong>María G. - Castelldefels</strong></p>
-<p class="review-text">“Reformaron nuestro baño con un acabado increíble. Profesionales y puntuales. ¡100% recomendables!”</p>
-</div>
-<div class="card">
-<img src="cliente2.jpg" alt="Cliente satisfecho en Gavá" class="review-img">
-<p><strong>Javier R. - Gavá</strong></p>
-<p class="review-text">“Nuestra cocina quedó espectacular. El equipo de LUJO 28 entendió lo que queríamos.”</p>
-</div>
-<div class="card">
-<img src="cliente3.jpg" alt="Cliente satisfecho en Viladecans" class="review-img">
-<p><strong>Laura M. - Viladecans</strong></p>
-<p class="review-text">“Excelente servicio y atención. La pintura quedó perfecta.”</p>
-</div>
-</div>
-</section>
-
-<section class="section">
-<h2>Zonas de Servicio</h2>
-<div class="zona"><h3>Castelldefels</h3><p>Viviendas de alto nivel, calidad garantizada.</p></div>
-<div class="zona"><h3>Gavá</h3><p>Proyectos premium con entrega puntual garantizada.</p></div>
-<div class="zona"><h3>Viladecans</h3><p>Modernización de pisos y reformas completas adaptadas a cada cliente.</p></div>
+<section class="testimonials">
+<h2>Opiniones de Clientes</h2>
+<div class="testimonial">"Trabajo impecable en Castelldefels. Calidad superior." — Marta G.</div>
+<div class="testimonial">"La cocina quedó espectacular en Gavà." — Luis M.</div>
+<div class="testimonial">"Profesionales serios en Viladecans." — Ana R.</div>
 </section>
 
 <footer>
-LUJO 28 2025 SL <br>
-Reformas en Castelldefels · Gavá · Viladecans <br>
-Tel: +34 634 21 94 38
+© 2025 LUJO 28 2025 SL | Reformas en Castelldefels, Gavà y Viladecans
 </footer>
 
-<div class="floating-menu">
-<a href="tel:+34634219438" class="f-btn call" title="Llamar"><i class="fas fa-phone-alt"></i></a>
-<a href="https://wa.me/34634219438" class="f-btn ws" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<div class="floating">
+<a href="tel:+34634219438" class="call">📞</a>
+<a href="https://wa.me/34634219438" target="_blank" class="ws">💬</a>
 </div>
 
 <script>
-// Slider Antes/Después funcional
-document.querySelectorAll('.slider-container').forEach(container => {
-    const after = container.querySelector('.slider-after');
-    container.addEventListener('mousemove', e => {
-        const rect = container.getBoundingClientRect();
-        let x = e.clientX - rect.left;
-        x = Math.max(0, Math.min(rect.width, x));
-        after.style.width = x + 'px';
-    });
-    container.addEventListener('mouseleave', () => { after.style.width = '50%'; });
+/* Slider automático */
+document.querySelectorAll('.slider').forEach(slider=>{
+let imgs=slider.querySelectorAll('img');
+let index=0;
+imgs[0].classList.add('active');
+setInterval(()=>{
+imgs[index].classList.remove('active');
+index=(index+1)%imgs.length;
+imgs[index].classList.add('active');
+},3000);
+});
+
+/* Animación aparición */
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+},{threshold:0.2});
+
+document.querySelectorAll('.card').forEach(card=>{
+observer.observe(card);
 });
 </script>
 
